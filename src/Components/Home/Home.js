@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Team from '../Team/Team';
+import images from '../../images/bg-banner.png';
 
 const Home = () => {
     const [teams, setTeams] = useState([]);
@@ -10,9 +11,15 @@ const Home = () => {
         console.log(setTeams);
     }, {})
 
-    return (
-        <div>
+    const imgStyle = {
+        width: '1120px',
+        height: '500px',
 
+    }
+
+    return (
+        <div className="container">
+            <img style={imgStyle} src={images}/>
             {
                 teams.map(team => <Team team={team}></Team>)
             }
