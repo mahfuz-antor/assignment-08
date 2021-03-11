@@ -13,7 +13,7 @@ const Home = () => {
 
     const imgStyle = {
         width: '1120px',
-        height: '500px',
+        height: '400px',
 
     }
 

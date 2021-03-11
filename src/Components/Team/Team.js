@@ -31,9 +31,7 @@ const Team = (props) => {
                     <h3 className="d-flex justify-content-center"> {strTeam}</h3>
                     <p className="d-flex justify-content-center">Club: {strAlternate}</p>
                     <p className="d-flex justify-content-center">Type of: Football</p>
-                    <Link className="d-flex justify-content-center bg-info text-light" style={{ borderRadius: '7px' }} to={`/teamDetails/${idTeam}`}> Click to Show Details  </Link>
-                    <br />
-                    {/* <button onClick={() => handleClick(idTeam)}>Details</button> */}
+                    <Link className="d-flex justify-content-center bg-info text-light" style={{ borderRadius: '7px' }} to={`/teamDetails/${idTeam}`}> Click to Show Details </Link> 
                 </div>
             </div>
        

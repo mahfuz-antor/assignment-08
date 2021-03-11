@@ -33,7 +33,7 @@ const DetailPage = (props) => {
 
         <div className="container bg-info">
             {/* <h1>This is DetailPage</h1> */}
-            <img style={{width: '1110px',height: '500px' }} src={strTeamFanart1} alt="" />
+            <img style={{width: '1110px',height: '400px' }} src={strTeamFanart1} alt="" />
             <div style={containStyle}>
                 <div style={{ float: 'left', margin: '15px' }}>
                     <img style={logoStyle} src={strTeamBadge} alt="" />
