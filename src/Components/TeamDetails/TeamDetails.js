@@ -23,7 +23,7 @@ const TeamDetails = () => {
               teamDetail.map(teamData => <DetailPage teamData={teamData}></DetailPage>)
             }
             {
-              teamDetail.map(teamData => <Header teamData={teamData}></Header>)
+            //   teamDetail.map(teamData => <Header teamData={teamData}></Header>)
             }
         </div>
     );
