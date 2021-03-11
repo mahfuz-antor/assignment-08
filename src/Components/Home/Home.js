@@ -19,12 +19,18 @@ const Home = () => {
 
     return (
         <div className="container">
-            <img style={imgStyle} src={images} alt=""/>
+            <div className=""
+                style={{
+                    background: `url(${images})`, width: '1120px', height: '400px'
+                }}
+            ><h2 className="text-center" style={{ padding: '200px', color: 'rgb(157, 245, 229)', fontSize: '50px' }}> Searching Team Details </h2></div>
+
             {
                 teams.map(team => <Team team={team}></Team>)
             }
 
-        </div>
+
+        </div >
     );
 };
 
