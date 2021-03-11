@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <div className="container">
-            <img style={imgStyle} src={images}/>
+            <img style={imgStyle} src={images} alt=""/>
             {
                 teams.map(team => <Team team={team}></Team>)
             }

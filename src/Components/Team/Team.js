@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import Header from '../Header/Header';
 
 
 const Team = (props) => {
-    const { strTeam, strAlternate, strTeamBadge, idTeam, strStadiumThumb } = props.team;
+    const { strTeam, strAlternate, strTeamBadge, idTeam } = props.team;
 
     // const history = useHistory();
 
@@ -28,7 +27,7 @@ const Team = (props) => {
         
             <div className="container bg-primary">
                 <div className="shadow-lg" style={teamStyle}>
-                    <img style={{ width: '150px', marginLeft: '25%' }} className="d-flex justify-content-center" src={strTeamBadge} />
+                    <img style={{ width: '150px', marginLeft: '25%' }} className="d-flex justify-content-center" src={strTeamBadge} alt="" />
                     <h3 className="d-flex justify-content-center"> {strTeam}</h3>
                     <p className="d-flex justify-content-center">Club: {strAlternate}</p>
                     <p className="d-flex justify-content-center">Type of: Football</p>

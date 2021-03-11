@@ -3,7 +3,7 @@ import images from '../../images/male.png';
 
 
 const DetailPage = (props) => {
-    const { strTeam, strDescriptionEN, intFormedYear, strCountry, strGender, strTeamBadge, strStadiumThumb, strTeamBanner, strTeamFanart1, strTeamLogo, strWebsite, strYoutube, strTwitter, strFacebook, } = props.teamData;
+    const { strTeam, strDescriptionEN, intFormedYear, strCountry, strGender, strTeamBadge, strTeamFanart1, strYoutube, strTwitter, strFacebook, } = props.teamData;
 
     const logoStyle = {
         width: '110px'
@@ -33,17 +33,17 @@ const DetailPage = (props) => {
 
         <div className="container bg-info">
             {/* <h1>This is DetailPage</h1> */}
-            <img style={{width: '1110px',height: '500px' }} src={strTeamFanart1} />
+            <img style={{width: '1110px',height: '500px' }} src={strTeamFanart1} alt="" />
             <div style={containStyle}>
                 <div style={{ float: 'left', margin: '15px' }}>
-                    <img style={logoStyle} src={strTeamBadge} />
+                    <img style={logoStyle} src={strTeamBadge} alt="" />
                     <h3 className=""> {strTeam}</h3>
                     <p>Founded: {intFormedYear}</p>
                     <p>Country: {strCountry}</p>
                     <p>Sport Type: Football</p>
                     <p>Gender: {strGender}</p>
                 </div>
-                <img style={containImgStyle} src={images} />
+                <img style={containImgStyle} src={images} alt="" />
             </div>
             <div style={descriptionStyle}>
                 <p>Description: {strDescriptionEN} </p>
