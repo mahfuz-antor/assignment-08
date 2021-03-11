@@ -11,11 +11,6 @@ const Home = () => {
         console.log(setTeams);
     }, [])
 
-    const imgStyle = {
-        width: '1120px',
-        height: '400px',
-
-    }
 
     return (
         <div className="container">
