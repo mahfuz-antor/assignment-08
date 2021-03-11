@@ -1,5 +1,9 @@
 import React from 'react';
 import images from '../../images/male.png';
+import iconsTwr from '../../images/twitter-square-brands.svg';
+import iconsFb from '../../images/facebook-brands.svg';
+import iconsYtube from '../../images/youtube-brands.svg';
+
 
 
 const DetailPage = (props) => {
@@ -48,9 +52,10 @@ const DetailPage = (props) => {
             <div style={descriptionStyle}>
                 <p>Description: {strDescriptionEN} </p>
                 <div className="text-center p-5">
-                    <a className="p-3 text-light" href={strTwitter}>Twitter</a>
-                    <a className="p-3 text-light" href={strYoutube}>Youtube</a>
-                    <a className="p-3 text-light" href={strFacebook}>Facebook</a>
+                    <a className="p-3 text-light" href={strTwitter}> <img style={{ width:'32px',height:'32'}} src={iconsTwr} alt=""/>  </a>
+                    <a className="p-3 text-light" href={strYoutube}> <img style={{ width:'44px',height:'44'}} src={iconsYtube} alt=""/> </a>
+                    <a className="p-3 text-light" href={strFacebook}> <img style={{ width:'32px',height:'32'}} src={iconsFb} alt=""/>
+                    </a>
                 </div>
 
             </div>
